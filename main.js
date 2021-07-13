@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // cursor image is 310 x 150; so (e.pageY - 75) bec 150/2 and
     // 310/2 = 155 para gitna ng image yung mouse
 
+    document.addEventListener('touchmove', e => {
+      cursor.setAttribute('style', 'top: ' + (e.pageY - 75) + 'px; left: ' + (e.pageX- 155) + 'px;') 
+    })
 
     // var $wrap = $('.wrapper'),
     var eyes = $('.doggo-eyes'),
