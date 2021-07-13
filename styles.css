@@ -45,6 +45,11 @@ h1 {
     justify-content: space-between;
 }
 
+.doggo-fixed {
+    position: absolute;
+    bottom: 0;
+}
+
 .doggo {
     background-image: url('assets/doggo.png');
     background-repeat: no-repeat;
