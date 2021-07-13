@@ -16,7 +16,17 @@ body {
     z-index: 3;
     width: 20%;
     height: auto;
+    animation: shake 0.5s; 
+    transition-timing-function: ease;
+    animation-iteration-count: infinite; 
 }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(-7deg); }
+    50% { transform: translate(-3px, 3px) rotate(7deg); }
+    100% { transform: translate(1px, 1px) rotate(-7deg); }
+}
+
+
 
 h1 {
     font-size: 72px;
